@@ -1,0 +1,203 @@
+
+------- output data :-----------
+
+1-IPC-2001-2012 data analysis:
+
+-----------------------------------
+
+---------------------------------------------
+Dimension of the data frame =  (9017, 33)
+---------------------------------------------
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> STATE_UT
+1 --> DISTRICT
+2 --> YEAR
+3 --> MURDER
+4 --> ATTEMPT TO MURDER
+5 --> CULPABLE HOMICIDE NOT AMOUNTING TO MURDER
+6 --> RAPE
+7 --> CUSTODIAL RAPE
+8 --> OTHER RAPE
+9 --> KIDNAPPING & ABDUCTION
+10 --> KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS
+11 --> KIDNAPPING AND ABDUCTION OF OTHERS
+12 --> DACOITY
+13 --> PREPARATION AND ASSEMBLY FOR DACOITY
+14 --> ROBBERY
+15 --> BURGLARY
+16 --> THEFT
+17 --> AUTO THEFT
+18 --> OTHER THEFT
+19 --> RIOTS
+20 --> CRIMINAL BREACH OF TRUST
+21 --> CHEATING
+22 --> COUNTERFIETING
+23 --> ARSON
+24 --> HURT/GREVIOUS HURT
+25 --> DOWRY DEATHS
+26 --> ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY
+27 --> INSULT TO MODESTY OF WOMEN
+28 --> CRUELTY BY HUSBAND OR HIS RELATIVES
+29 --> IMPORTATION OF GIRLS FROM FOREIGN COUNTRIES
+30 --> CAUSING DEATH BY NEGLIGENCE
+31 --> OTHER IPC CRIMES
+32 --> TOTAL IPC CRIMES
+
+-----------------------------
+
+---------------------------------
+         states names : 
+-------------------------------
+                   YEAR
+STATE_UT               
+A & N ISLANDS        36
+ANDHRA PRADESH      370
+ARUNACHAL PRADESH   195
+ASSAM               362
+BIHAR               540
+CHANDIGARH           24
+CHHATTISGARH        266
+D & N HAVELI         24
+DAMAN & DIU          36
+DELHI UT            183
+GOA                  36
+GUJARAT             384
+HARYANA             268
+HIMACHAL PRADESH    176
+JAMMU & KASHMIR     322
+JHARKHAND           312
+KARNATAKA           399
+KERALA              233
+LAKSHADWEEP          24
+MADHYA PRADESH      628
+MAHARASHTRA         552
+MANIPUR             125
+MEGHALAYA            96
+MIZORAM             108
+NAGALAND            138
+ODISHA              430
+PUDUCHERRY           31
+PUNJAB              314
+RAJASTHAN           454
+SIKKIM               60
+TAMIL NADU          469
+TRIPURA              67
+UTTAR PRADESH       878
+UTTARAKHAND         168
+WEST BENGAL         309
+-------------------------------
+total no. of states =  35
+-----------------------------
+
+---------------------------------
+         Year : 
+-------------------------------
+      STATE_UT
+YEAR          
+2001       716
+2002       719
+2003       728
+2004       729
+2005       733
+2006       740
+2007       743
+2008       761
+2009       767
+2010       779
+2011       791
+2012       811
+-------------------------------
+total no. of available years =  12
+-----------------------------
+
+
+---: convert to Total operation :-------
+---------------------------------------------
+Dimension of the data frame =  (408, 33)
+---------------------------------------------
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> STATE_UT
+1 --> DISTRICT
+2 --> YEAR
+3 --> MURDER
+4 --> ATTEMPT TO MURDER
+5 --> CULPABLE HOMICIDE NOT AMOUNTING TO MURDER
+6 --> RAPE
+7 --> CUSTODIAL RAPE
+8 --> OTHER RAPE
+9 --> KIDNAPPING & ABDUCTION
+10 --> KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS
+11 --> KIDNAPPING AND ABDUCTION OF OTHERS
+12 --> DACOITY
+13 --> PREPARATION AND ASSEMBLY FOR DACOITY
+14 --> ROBBERY
+15 --> BURGLARY
+16 --> THEFT
+17 --> AUTO THEFT
+18 --> OTHER THEFT
+19 --> RIOTS
+20 --> CRIMINAL BREACH OF TRUST
+21 --> CHEATING
+22 --> COUNTERFIETING
+23 --> ARSON
+24 --> HURT/GREVIOUS HURT
+25 --> DOWRY DEATHS
+26 --> ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY
+27 --> INSULT TO MODESTY OF WOMEN
+28 --> CRUELTY BY HUSBAND OR HIS RELATIVES
+29 --> IMPORTATION OF GIRLS FROM FOREIGN COUNTRIES
+30 --> CAUSING DEATH BY NEGLIGENCE
+31 --> OTHER IPC CRIMES
+32 --> TOTAL IPC CRIMES
+
+-----------------------------
+
+---------------------------------
+         states names : 
+-------------------------------
+                   YEAR
+STATE_UT               
+A & N ISLANDS        12
+ANDHRA PRADESH       12
+ARUNACHAL PRADESH    12
+ASSAM                12
+BIHAR                12
+CHANDIGARH           12
+CHHATTISGARH         12
+D & N HAVELI         12
+DAMAN & DIU          12
+GOA                  12
+GUJARAT              12
+HARYANA              12
+HIMACHAL PRADESH     12
+JAMMU & KASHMIR      12
+JHARKHAND            12
+KARNATAKA            12
+KERALA               12
+LAKSHADWEEP          12
+MADHYA PRADESH       12
+MAHARASHTRA          12
+MANIPUR              12
+MEGHALAYA            12
+MIZORAM              12
+NAGALAND             12
+ODISHA               12
+PUDUCHERRY           12
+PUNJAB               12
+RAJASTHAN            12
+SIKKIM               12
+TAMIL NADU           12
+TRIPURA              12
+UTTAR PRADESH        12
+UTTARAKHAND          12
+WEST BENGAL          12
+-------------------------------
+total no. of states =  34
+-----------------------------
+
