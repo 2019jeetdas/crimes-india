@@ -1,0 +1,437 @@
+# state-22: MEGHALAYA
+
+#---: convert to Total operation :------- 
+
+print("\n---: convert to Total operation :-------")
+df_megh = df_total[df_total.STATE_UT == 'MEGHALAYA']
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df_megh.shape)
+print('---------------------------------------------')
+print('\t Available year\n--------------------------------')       
+year=df_megh['YEAR']
+print(year)
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df_megh.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n") 
+
+df_1 = df_megh['MURDER']
+df_2 = df_megh['ATTEMPT TO MURDER']
+df_3 = df_megh['CULPABLE HOMICIDE NOT AMOUNTING TO MURDER']
+df_4 = df_megh['RAPE']
+df_5 = df_megh['CUSTODIAL RAPE']
+                    
+df_6 = df_megh['OTHER RAPE']
+df_7 = df_megh['KIDNAPPING & ABDUCTION']
+df_8 = df_megh['KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS']
+df_9 = df_megh['KIDNAPPING AND ABDUCTION OF OTHERS']
+df_10 = df_megh['DACOITY']
+
+df_11 = df_megh['PREPARATION AND ASSEMBLY FOR DACOITY']
+df_12 = df_megh['ROBBERY']
+df_13 = df_megh['BURGLARY']
+df_14 = df_megh['THEFT']
+df_15 = df_megh['AUTO THEFT']
+
+df_16 = df_megh['OTHER THEFT']
+df_17 = df_megh['RIOTS']
+df_18 = df_megh['CRIMINAL BREACH OF TRUST']
+df_19 = df_megh['CHEATING']
+df_20 = df_megh['COUNTERFIETING']
+                    
+df_21 = df_megh['ARSON']
+df_22 = df_megh['HURT/GREVIOUS HURT']
+df_23 = df_megh['DOWRY DEATHS']
+df_24 = df_megh['ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY']
+df_25 = df_megh['INSULT TO MODESTY OF WOMEN']
+
+df_26 = df_megh['CRUELTY BY HUSBAND OR HIS RELATIVES']
+df_27 = df_megh['IMPORTATION OF GIRLS FROM FOREIGN COUNTRIES']
+df_28 = df_megh['CAUSING DEATH BY NEGLIGENCE']
+df_29 = df_megh['OTHER IPC CRIMES']
+df_30 = df_megh['TOTAL IPC CRIMES'] 
+
+plt.title('plot - 1 : 2001-2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_1,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="1 --> MURDER")
+
+plt.plot(year,df_2,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="2 --> ATTEMPT TO MURDER")
+
+plt.plot(year,df_3,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="3 --> CULPABLE HOMICIDE NOT AMOUNTING TO MURDER")
+            
+plt.plot(year,df_4,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="4 --> RAPE")
+            
+plt.plot(year,df_5,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="5 --> CUSTODIAL RAPE")
+            
+plt.legend()
+plt.show()
+
+#------------ plot-2 -----------------
+
+plt.title('plot - 2:2001-2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_6,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="6 --> OTHER RAPE")
+
+plt.plot(year,df_7,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="7 --> KIDNAPPING & ABDUCTION")
+
+plt.plot(year,df_8,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="8 --> KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS")
+            
+plt.plot(year,df_9,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="9 --> KIDNAPPING AND ABDUCTION OF OTHERS")
+            
+plt.plot(year,df_10,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="10 --> DACOITY")
+            
+plt.legend()
+plt.show() 
+
+#------------ plot-3 -----------------
+
+plt.title('plot - 3: 2001-2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_11,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="11 --> PREPARATION AND ASSEMBLY FOR DACOITY")
+
+plt.plot(year,df_12,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="12 --> ROBBERY")
+
+plt.plot(year,df_13,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="13 --> BURGLARY")
+            
+plt.plot(year,df_14,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="14 --> THEFT")
+            
+plt.plot(year,df_15,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="15 --> AUTO THEFT")
+            
+plt.legend()
+plt.show() 
+
+#------------ plot-4 -----------------
+
+plt.title('plot - 4 : 2001-2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_16,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="16 --> OTHER THEFT")
+
+plt.plot(year,df_17,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="17 --> RIOTS")
+
+plt.plot(year,df_18,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="18 --> CRIMINAL BREACH OF TRUST")
+            
+plt.plot(year,df_19,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="19 --> CHEATING")
+            
+plt.plot(year,df_20,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="20 --> COUNTERFIETING")
+            
+plt.legend()
+plt.show() 
+
+#------------ plot-5 -----------------
+
+plt.title('plot - 5 : 2001 - 2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_21,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="21 --> ARSON")
+
+plt.plot(year,df_22,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="22 --> HURT/GREVIOUS HURT")
+
+plt.plot(year,df_23,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="23 --> DOWRY DEATHS")
+            
+plt.plot(year,df_24,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="24 --> ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY")
+            
+plt.plot(year,df_25,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="25 --> INSULT TO MODESTY OF WOMEN")
+            
+plt.legend()
+plt.show() 
+
+#------------ plot-6 -----------------
+
+plt.title('plot - 6 : 2001-2012')
+plt.xlabel("Year --- >")
+plt.ylabel("Numbers --- >")
+    
+plt.plot(year,df_26,
+            marker=4,
+            markersize=10,
+            linestyle='dashed',
+            label="26 --> CRUELTY BY HUSBAND OR HIS RELATIVES")
+
+plt.plot(year,df_27,
+            marker=5,
+            markersize=10,
+            linestyle='dashed',
+            label="27 --> IMPORTATION OF GIRLS FROM FOREIGN COUNTRIES")
+
+plt.plot(year,df_28,
+            marker=6,
+            markersize=10,
+            linestyle='dashed',
+            label="28 --> CAUSING DEATH BY NEGLIGENCE")
+            
+plt.plot(year,df_29,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="29 --> OTHER IPC CRIMES")
+            
+plt.plot(year,df_30,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="30 --> TOTAL IPC CRIMES")
+            
+plt.legend()
+plt.show()            
+
+print("1 --> MURDER")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_1)
+print("--------------------------------------------------------------")
+
+print("2 --> ATTEMPT TO MURDER")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_2)
+print("--------------------------------------------------------------")
+	
+print("3 --> CULPABLE HOMICIDE NOT AMOUNTING TO MURDER")
+print("\n--------------\nRow No. --> data\n------------------\n")	
+print(df_3)
+print("--------------------------------------------------------------")
+
+print("4 --> RAPE")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_4)
+print("--------------------------------------------------------------")
+
+print("5 --> CUSTODIAL RAPE")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_5)
+print("--------------------------------------------------------------")
+
+print("6 --> OTHER RAPE")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_6)
+print("--------------------------------------------------------------")
+
+print("7 --> KIDNAPPING & ABDUCTION")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_7)
+print("--------------------------------------------------------------")
+
+print("8 --> KIDNAPPING AND ABDUCTION OF WOMEN AND GIRLS")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_8)
+print("--------------------------------------------------------------")
+
+print("9 --> KIDNAPPING AND ABDUCTION OF OTHERS")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_9)
+print("--------------------------------------------------------------")
+
+print("10 --> DACOITY")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_10)
+print("--------------------------------------------------------------")
+
+print("11 --> PREPARATION AND ASSEMBLY FOR DACOITY")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_11)
+print("--------------------------------------------------------------")
+
+print("12 --> ROBBERY")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_12)
+print("--------------------------------------------------------------")
+
+print("13 --> BURGLARY")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_13)
+print("--------------------------------------------------------------")
+
+print("14 --> THEFT")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_14)
+print("--------------------------------------------------------------")
+
+print("15 --> AUTO THEFT")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_15)
+print("--------------------------------------------------------------")
+
+print("16 --> OTHER THEFT")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_16)
+print("--------------------------------------------------------------")
+
+print("17 --> RIOTS")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_17)
+print("--------------------------------------------------------------")
+
+print("18 --> CRIMINAL BREACH OF TRUST")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_18)
+print("--------------------------------------------------------------")
+
+print("19 --> CHEATING")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_19)
+print("--------------------------------------------------------------")
+	
+print("20 --> COUNTERFIETING")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_20)
+print("--------------------------------------------------------------")
+
+print("21 --> ARSON")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_21)
+print("--------------------------------------------------------------")
+
+print("22 --> HURT/GREVIOUS HURT")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_22)
+print("--------------------------------------------------------------")
+
+print("23 --> DOWRY DEATHS")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_23)
+print("--------------------------------------------------------------")
+
+print("24 --> ASSAULT ON WOMEN WITH INTENT TO OUTRAGE HER MODESTY")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_24)
+print("--------------------------------------------------------------")
+
+print("25 --> INSULT TO MODESTY OF WOMEN")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_25)
+print("--------------------------------------------------------------")
+
+print("26 --> CRUELTY BY HUSBAND OR HIS RELATIVES")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_26)
+print("--------------------------------------------------------------")
+
+print("27 --> IMPORTATION OF GIRLS FROM FOREIGN COUNTRIES")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_27)
+print("--------------------------------------------------------------")
+
+print("28 --> CAUSING DEATH BY NEGLIGENCE")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_28)
+print("--------------------------------------------------------------")
+
+print("29 --> OTHER IPC CRIMES")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_29)
+print("--------------------------------------------------------------")
+
+print("30 --> TOTAL IPC CRIMES")
+print("\n--------------\nRow No. --> data\n------------------\n")
+print(df_30)
+print("--------------------------------------------------------------")   
